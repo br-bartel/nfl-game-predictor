@@ -15,7 +15,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest", "ruff"]
+dev = ["pytest", "ruff", "matplotlib"]
 
 [build-system]
 requires = ["hatchling"]
@@ -26,3 +26,6 @@ packages = ["src/nflpred"]
 
 [tool.ruff]
 line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

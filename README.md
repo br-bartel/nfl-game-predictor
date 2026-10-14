@@ -56,7 +56,10 @@ reports/        evaluation outputs
 
 ## Next steps
 
-1. Use the injury report (`load_injuries`) to project upcoming starters. Right now, upcoming games assume last week's starter.
-2. Make EPA opponent-adjusted, and tune the half-life with time-series CV inside each training window.
-3. Calibrate the win probability directly (logistic or isotonic) instead of using the fixed normal-sd conversion.
-4. Track experiments in MLflow, serve with FastAPI, and run a weekly scheduled job that publishes predictions before Thursday kickoff.
+This is a guided project. The next steps are exercises in [docs/LEARNING.md](docs/LEARNING.md),
+starting with [calibrated win probability](docs/exercises/01-calibration.md).
+
+```
+pip install -e ".[dev]"
+pytest            # failing tests mark exercises still to do
+```
