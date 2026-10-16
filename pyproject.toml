@@ -12,6 +12,7 @@ dependencies = [
     "scikit-learn>=1.5",
     "scipy",
     "lightgbm>=4.0",
+    "pytest>=9.1.1",
 ]
 
 [project.optional-dependencies]
